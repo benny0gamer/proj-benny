@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benny Gamer - Canal de Vídeos</title>
+
+    <!-- Adicionando a fonte "Press Start 2P" do Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Estilos para dividir o fundo em azul e vermelho */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            position: relative;
+        }
+
+        .container {
+            width: 100%;
+            height: 100%;
+            display: flex;
+        }
+
+        .left {
+            background-color: blue;
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+
+        .right {
+            background-color: red;
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+
+        /* Estilo para a imagem do banner */
+        .banner {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .banner img {
+            width: 300px;
+            height: 300px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+
+        /* Estilo do botão */
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #fff;
+            border: none;
+            color: black;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background-color: #ddd;
+        }
+
+        /* Estilo do título "Site Oficial" */
+        #site-oficial {
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            transform: translateX(-50%);
+            font-family: 'Press Start 2P', cursive;
+            font-size: 40px;
+            color: black;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            letter-spacing: 3px;
+            margin-bottom: 20px;
+        }
+
+        /* Estilo do "Benny Gamer" abaixo de "Site Oficial" */
+        #benny-gamer {
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translateX(-50%);
+            font-family: 'Press Start 2P', cursive;
+            font-size: 30px;
+            color: black;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            letter-spacing: 2px;
+        }
+
+        /* Seção de vídeos */
+        #video-section {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        iframe {
+            margin-bottom: 20px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Texto "Site Oficial" no meio da tela -->
+    <div id="site-oficial">Site Oficial</div>
+
+    <!-- Texto "Benny Gamer" abaixo de "Site Oficial" -->
+    <div id="benny-gamer">Benny Gamer</div>
+
+    <div class="container">
+        <!-- Lado esquerdo (azul) -->
+        <div class="left">
+            <div>
+                <h1>Bem-vindo ao Canal Benny Gamer!</h1>
+                <p>Aqui estão alguns dos meus vídeos. Aproveite!</p>
+                <!-- Seção de Vídeos -->
+                <section id="video-section">
+                    <!-- Vídeo 1 -->
+                    <div class="video-container">
+                        <h2>Vídeo 1</h2>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/uiwggTlOp8c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <!-- Vídeo 2 -->
+                    <div class="video-container">
+                        <h2>Vídeo 2</h2>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/1dZi0XW-eNI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <!-- Vídeo 3 -->
+                    <div class="video-container">
+                        <h2>Vídeo 3</h2>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/hamBUMKlaKw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <!-- Lado direito (vermelho) -->
+        <div class="right">
+            <div>
+                <!-- Seção de Imagens e Banner do Canal -->
+                <section id="banners">
+                    <div class="banner">
+                        <img src="https://wallpapercave.com/wp/wp6669289.jpg" alt="Banner 2">
+                    </div>
+                    <div class="banner">
+                        <img src="https://static.vecteezy.com/system/resources/previews/022/252/108/large_2x/portrait-of-a-male-gamer-playing-online-games-on-a-computer-cyber-sport-concept-generative-ai-free-photo.jpg" alt="Banner 3">
+                    </div>
+                    <!-- Somente para a terceira imagem -->
+                    <div class="banner">
+                        <img src="https://yt3.googleusercontent.com/mcrMJrjwNJEhK-WB5nVCchpMJe7zsezxiRUI_0ZJDFBwnfauVJlBiTTTnG3i0M503aDJs3rlBg=s160-c-k-c0x00ffffff-no-rj" alt="Banner 1">
+                        <p>Banner do Canal</p>
+                    </div>
+                </section>
+
+                <!-- Link para o canal do YouTube -->
+                <section id="link-canal">
+                    <a href="http://www.youtube.com/@Benny_gamer-YT1234" target="_blank">
+                        <button>Visite meu Canal no YouTube!</button>
+                    </a>
+                </section>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
